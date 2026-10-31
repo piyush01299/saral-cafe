@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>सरल कैफे एंड रेस्टो, धार</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF9F4;--ink:#1D2240;--muted:#5d6280;--brand:#232C63;--on-brand:#FBF9F4;--accent:#F2B632;--line:#e6e1d3;--card:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142a;--ink:#f3efe3;--muted:#a9adc9;--brand:#0c0e20;--on-brand:#f3efe3;--line:#2a2e55;--card:#1a1d3a}}
+:root[data-theme="dark"]{--bg:#12142a;--ink:#f3efe3;--muted:#a9adc9;--brand:#0c0e20;--on-brand:#f3efe3;--line:#2a2e55;--card:#1a1d3a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Hind,system-ui,sans-serif;font-size:18px;line-height:1.6}
+h1,h2,h3{font-weight:700;line-height:1.2;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+nav b{font-size:20px}
+nav a{text-decoration:none;margin-left:16px;font-weight:500}
+.hero{background:var(--brand);color:var(--on-brand);padding-bottom:56px}
+.hero h1{font-size:clamp(38px,9vw,72px);margin-top:36px;max-width:14ch}
+.hero p{max-width:34ch;font-size:20px;opacity:.9;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#1D2240;padding:13px 22px;border-radius:999px;font-weight:500;text-decoration:none;margin:0 8px 8px 0}
+.btn.alt{background:transparent;color:inherit;border:1.5px solid currentColor}
+section{padding:56px 0}
+h2{font-size:clamp(28px,6vw,40px);margin-bottom:24px}
+.menu{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.menu h3{font-size:22px;margin-bottom:8px;padding-bottom:8px;border-bottom:2px solid var(--accent)}
+.item{padding:10px 0;border-bottom:1px dashed var(--line);font-size:19px}
+.note{color:var(--muted);margin-top:24px;font-size:16px}
+.info{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cols{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cols h3{font-size:20px;margin-bottom:8px}
+.cols p{margin:0;color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line);font-size:19px}
+.qty{display:flex;align-items:center;gap:14px}
+.qty button{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font-size:22px;cursor:pointer}
+.qty span{min-width:20px;text-align:center}
+.order{max-width:520px}
+.order input{width:100%;padding:12px;margin:18px 0 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--card);color:var(--ink)}
+.order .btn.off{opacity:.45;pointer-events:none}
+.opts{display:flex;flex-wrap:wrap;gap:8px 20px;margin:10px 0}
+.opts label{display:flex;align-items:center;gap:8px;cursor:pointer}
+.opts input{width:auto;margin:0;accent-color:var(--accent)}
+.lbl{margin:16px 0 0;font-weight:500}
+#ad{display:none}
+.upi{margin-top:28px;padding:18px;border:1.5px solid var(--accent);border-radius:14px;background:var(--card)}
+.upi h3{font-size:20px;margin-bottom:6px}
+.upi code{font-size:19px;word-break:break-all}
+.upi .btn{margin-top:12px}
+footer{padding:28px 0;color:var(--muted);font-size:15px;text-align:center}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap">
+<nav><b>सरल कैफे एंड रेस्टो</b><div><a href="#menu">मेन्यू</a><a href="#visit">संपर्क</a></div></nav>
+<h1>गरमा-गरम चाय और ताज़ा नाश्ता।</h1>
+<p>धार में गोडा चौपाटी के पास। सुबह 9 से शाम 5 बजे तक।</p>
+<a class="btn" href="#order">ऑर्डर करें</a><a class="btn alt" href="tel:+919171464476">कॉल करें</a>
+</div>
+</header>
+
+<main>
+<section id="menu">
+<div class="wrap">
+<h2>हमारा मेन्यू</h2>
+<div class="menu">
+<div><h3>नाश्ता</h3>
+<div class="item">पोहा</div>
+<div class="item">समोसा</div>
+<div class="item">पकोड़ा</div>
+<div class="item">आलू बड़ा</div>
+</div>
+<div><h3>चाय</h3>
+<div class="item">चाय</div>
+</div>
+<div><h3>मिठाई</h3>
+<div class="item">जलेबी</div>
+</div>
+</div>
+<p class="note">भाव जानने के लिए कॉल या WhatsApp करें।</p>
+</div>
+</section>
+
+<section id="order">
+<div class="wrap order">
+<h2>ऑर्डर करें</h2>
+<div id="rows"></div>
+<input id="nm" type="text" placeholder="आपका नाम" autocomplete="name">
+<p class="lbl">लेने का तरीका</p>
+<div class="opts"><label><input type="radio" name="mode" value="पिकअप" checked>पिकअप</label><label><input type="radio" name="mode" value="डिलीवरी">डिलीवरी</label></div>
+<input id="ad" type="text" placeholder="डिलीवरी का पता" autocomplete="street-address">
+<p class="lbl">पेमेंट</p>
+<div class="opts"><label><input type="radio" name="pay" value="कैश" checked>कैश</label><label><input type="radio" name="pay" value="UPI">UPI</label></div>
+<a id="send" class="btn off" target="_blank" rel="noopener" href="#order">WhatsApp पर ऑर्डर भेजें</a>
+<p class="note">मात्रा चुनें और बटन दबाएँ। आपका ऑर्डर WhatsApp पर हमें पहुँच जाएगा।</p>
+<div class="upi">
+<h3>UPI से पेमेंट</h3>
+<code>231766729@axl</code><br>
+<a class="btn" href="upi://pay?pa=231766729@axl&amp;pn=%E0%A4%B8%E0%A4%B0%E0%A4%B2%20%E0%A4%95%E0%A5%88%E0%A4%AB%E0%A5%87&amp;cu=INR">UPI ऐप खोलें</a>
+<button type="button" id="cp" class="btn alt" style="cursor:pointer;font:inherit;color:var(--ink)">ID कॉपी करें</button>
+<p class="note" style="margin-top:6px">राशि ऑर्डर के बाद WhatsApp पर बता दी जाएगी।</p>
+</div>
+</div>
+</section>
+
+<section class="info" id="visit">
+<div class="wrap">
+<h2>हमसे मिलें</h2>
+<div class="cols">
+<div><h3>पता</h3><p>गोडा चौपाटी के पास,<br>धार</p></div>
+<div><h3>समय</h3><p>सुबह 9:00 बजे से<br>शाम 5:00 बजे तक</p></div>
+<div><h3>संपर्क</h3><p><a href="tel:+919171464476">91714 64476</a></p><p style="margin-top:14px"><a class="btn" href="https://wa.me/919171464476">WhatsApp पर ऑर्डर करें</a></p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 सरल कैफे एंड रेस्टो, धार</footer>
+<script>
+(function(){
+var items=["पोहा","समोसा","पकोड़ा","आलू बड़ा","चाय","जलेबी"];
+var q={};var rows=document.getElementById("rows");
+var nm=document.getElementById("nm");var send=document.getElementById("send");
+items.forEach(function(n){
+q[n]=0;
+var r=document.createElement("div");r.className="row";
+r.innerHTML='<span>'+n+'</span><div class="qty"><button type="button" aria-label="कम करें">−</button><span>0</span><button type="button" aria-label="बढ़ाएँ">+</button></div>';
+var b=r.querySelectorAll("button"),c=r.querySelector(".qty span");
+b[0].onclick=function(){if(q[n]>0){q[n]--;c.textContent=q[n];upd();}};
+b[1].onclick=function(){q[n]++;c.textContent=q[n];upd();};
+rows.appendChild(r);
+});
+function upd(){
+var lines=[];
+items.forEach(function(n){if(q[n]>0)lines.push("- "+n+" x "+q[n]);});
+if(!lines.length){send.className="btn off";send.href="#order";return;}
+var t="नमस्ते, मुझे ऑर्डर करना है:\n"+lines.join("\n");
+if(nm.value.trim())t+="\nनाम: "+nm.value.trim();
+t+=extra();send.className="btn";
+send.href="https://wa.me/919171464476?text="+encodeURIComponent(t);
+}
+var ad=document.getElementById("ad");
+var NL="\n";
+function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:"";}
+function extra(){var s=NL+"लेने का तरीका: "+val("mode");if(val("mode")==="डिलीवरी"&&ad.value.trim())s+=NL+"पता: "+ad.value.trim();s+=NL+"पेमेंट: "+val("pay");return s;}
+nm.addEventListener("input",upd);
+ad.addEventListener("input",upd);
+document.querySelectorAll('input[name="mode"],input[name="pay"]').forEach(function(e){e.addEventListener("change",function(){ad.style.display=val("mode")==="डिलीवरी"?"block":"none";upd();});});
+var cp=document.getElementById("cp");
+cp.onclick=function(){try{navigator.clipboard.writeText("231766729@axl");cp.textContent="कॉपी हो गया";}catch(e){cp.textContent="231766729@axl";}};
+})();
+</script>
+</body>
+</html>
