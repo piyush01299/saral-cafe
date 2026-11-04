@@ -1,0 +1,12 @@
+{
+  "name": "swaadly-food-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Swaadly food ordering website - Node.js server and embedded responsive frontend",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
