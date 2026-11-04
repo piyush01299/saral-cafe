@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>उत्तम रेस्टोरेंट, मांडव रोड बगड़ी फाटा</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Yatra+One&display=swap">
+<style>
+:root{--bg:#fbf6ea;--surface:#fff;--ink:#2d1a10;--muted:#6f5a4c;--brand:#3b1f14;--accent:#e8a400;--green:#2f6b3a;--line:#e6d9c3;--onbrand:#fff3d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0f09;--surface:#2a1a11;--ink:#f6ead3;--muted:#c2ab94;--brand:#0f0804;--accent:#f2b705;--green:#7fc98b;--line:#443024;--onbrand:#fff3d6}}
+:root[data-theme="dark"]{--bg:#1a0f09;--surface:#2a1a11;--ink:#f6ead3;--muted:#c2ab94;--brand:#0f0804;--accent:#f2b705;--green:#7fc98b;--line:#443024;--onbrand:#fff3d6}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Hind,"Noto Sans Devanagari",system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Yatra One",Hind,serif;font-weight:400;line-height:1.25;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--brand);color:var(--onbrand)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:10px}
+.logo{font-family:"Yatra One",serif;font-size:1.15rem;text-decoration:none}
+nav{display:flex;gap:14px;align-items:center;font-size:.95rem}
+nav a{text-decoration:none;opacity:.9}
+.cartlink{background:var(--accent);color:#2d1a10;padding:4px 12px;border-radius:99px;font-weight:600}
+.hero{background:var(--brand);color:var(--onbrand);padding:44px 0 56px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(2rem,8vw,3.4rem);max-width:12em}
+.hero p{max-width:30em;opacity:.9;margin:14px 0 22px}
+.steam{position:absolute;right:6%;top:18px;font-size:5.5rem;opacity:.9}
+.steam i{position:absolute;left:18px;top:-26px;font-style:normal;font-size:1.6rem;opacity:.6;animation:rise 3s ease-in-out infinite}
+@keyframes rise{0%{transform:translateY(8px);opacity:0}50%{opacity:.7}100%{transform:translateY(-14px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.steam i{animation:none}}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;font-size:.9rem}
+.badges span{border:1px solid rgba(255,243,214,.35);padding:3px 12px;border-radius:99px}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:600;padding:11px 20px;border-radius:10px;text-decoration:none;background:var(--accent);color:#2d1a10}
+.btn.alt{background:transparent;color:inherit;border:1.5px solid currentColor;margin-left:8px}
+.btn.wa{background:#1f9d55;color:#fff;width:100%;font-size:1.05rem;padding:14px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section{padding:44px 0}
+section h2{font-size:1.7rem;margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 20px}
+.offer{background:var(--green);color:#fff;border-radius:16px;padding:20px 22px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.offer h3{font-size:1.3rem}
+.offer p{margin:2px 0 0;opacity:.95}
+.offer .btn{background:#fff;color:#1d4a27}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px}
+.tab{flex:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;padding:6px 16px;border-radius:99px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--brand);color:var(--onbrand);border-color:var(--brand)}
+.item{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.item .em{font-size:2rem;width:52px;height:52px;display:grid;place-items:center;border-radius:12px;background:var(--bg)}
+.item .n{flex:1;font-weight:600}
+.item .n small{display:block;font-weight:400;color:var(--muted);font-size:.85rem}
+.price{font-weight:600;min-width:48px;text-align:right}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--brand);background:transparent;color:var(--ink);font-size:1.2rem;cursor:pointer}
+.qty output{min-width:18px;text-align:center;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.tile{aspect-ratio:1;border-radius:16px;display:grid;place-items:center;font-size:3.4rem;position:relative;overflow:hidden}
+.tile span{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;font-size:.85rem;background:rgba(0,0,0,.45);color:#fff}
+.gl{background:radial-gradient(120% 90% at 50% 0%,#5a2e1c 0%,var(--brand) 70%);color:var(--onbrand)}
+.gl .sub{color:#d9c3a0}
+.gl h2{color:#f6d98a}
+.gl h2::after{content:"";display:block;width:56px;height:3px;background:var(--accent);margin-top:10px;border-radius:3px}
+.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 18px 18px;margin:0 -18px;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gcard{flex:none;width:210px;scroll-snap-align:center;border-radius:22px;padding:1px;background:linear-gradient(160deg,#f6d98a,#8a5a1f 45%,#f6d98a);box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.gin{border-radius:21px;background:linear-gradient(170deg,#4a2616,#24120a);overflow:hidden;height:100%;display:flex;flex-direction:column}
+.gimg{height:170px;display:grid;place-items:center;font-size:5rem;position:relative;background:radial-gradient(circle at 50% 45%,rgba(246,217,138,.35),transparent 65%)}
+.gimg span{filter:drop-shadow(0 8px 10px rgba(0,0,0,.55))}
+.gimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gtag{font-style:normal;position:absolute;top:10px;left:10px;background:var(--accent);color:#2d1a10;font-size:.72rem;font-weight:600;padding:2px 10px;border-radius:99px}
+.gbody{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.gbody h3{font-size:1.1rem;color:#f6d98a}
+.gbody small{color:#d9c3a0;line-height:1.3;min-height:2.6em}
+.gfoot{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.gfoot b{font-size:1.15rem}
+.gfoot button{border:0;border-radius:99px;background:var(--accent);color:#2d1a10;font:inherit;font-weight:600;padding:6px 16px;cursor:pointer}
+.t1{background:#e8a400}.t2{background:#b4531f}.t3{background:#6b3f26}.t4{background:#2f6b3a}.t5{background:#c9772b}.t6{background:#8a2f2f}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+label{display:block;font-weight:600;margin:12px 0 6px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{margin:0;font-weight:500}
+.seg input{position:absolute;opacity:0}
+.seg span{display:inline-block;border:1.5px solid var(--line);border-radius:10px;padding:8px 18px;cursor:pointer}
+.seg input:checked+span{background:var(--brand);color:var(--onbrand);border-color:var(--brand)}
+.seg input:focus-visible+span{outline:3px solid var(--accent)}
+input[type=text],textarea{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+.sum{margin:16px 0;border-top:1px dashed var(--line);padding-top:12px}
+.sum div{display:flex;justify-content:space-between;padding:2px 0}
+.sum .tot{font-weight:600;font-size:1.15rem}
+.empty{color:var(--muted)}
+.upi{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px;padding:12px;border-radius:12px;background:var(--bg)}
+.upi code{font-size:1rem;word-break:break-all}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.cols h3{font-size:1.1rem;margin-bottom:4px}
+.cols p{margin:0}
+.rev{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer{background:var(--brand);color:var(--onbrand);padding:26px 0;text-align:center;font-size:.9rem}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#1f9d55;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 18px;border-radius:99px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.toast.on{opacity:1}
+
+.tabwrap{position:sticky;top:calc(56px + env(safe-area-inset-top,0px));z-index:15;background:var(--bg);padding:8px 0 4px;margin:0 -18px 8px;padding-left:18px;padding-right:18px;box-shadow:0 1px 0 var(--line)}
+.tabs{margin-bottom:0;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.search{width:100%;font:inherit;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);margin-bottom:8px}
+.item{padding:8px 12px;margin-bottom:6px;gap:10px;border-radius:12px}
+.item .em{font-size:1.4rem;width:38px;height:38px;border-radius:10px}
+.item .n{line-height:1.3}
+.qty .add{width:auto;padding:0 16px;border-radius:99px;background:var(--brand);color:var(--onbrand);font-size:.95rem;height:34px;border:0;font-weight:600}
+.qty button{width:34px;height:34px}
+.cartbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--green);color:#fff;border-radius:16px;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.3);max-width:936px;margin:0 auto}
+.cartbar[hidden]{display:none}
+.noitem{text-align:center;color:var(--muted);padding:24px 0}
+</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3b1f14">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">🍽️ उत्तम रेस्टोरेंट</a>
+<nav><a href="#menu">मेन्यू</a><a href="#gallery">गैलरी</a><a href="#visit">संपर्क</a><a class="cartlink" href="#order">ऑर्डर (<span id="cnt">0</span>)</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div class="steam" aria-hidden="true"><i>~</i>☕</div>
+<h1>गरमा-गरम चाय और ताज़ा नाश्ता।</h1>
+<p>मांडव रोड, बगड़ी फाटा पर। सुबह 9 से शाम 5 बजे तक। पिकअप या डिलीवरी, आपकी मर्ज़ी।</p>
+<a class="btn" href="#menu">मेन्यू देखें</a><a class="btn alt" href="tel:+919171464476">कॉल करें</a>
+<div class="badges"><span id="openstate">समय देख रहे हैं…</span><span>सुबह 9 – शाम 5</span><span>कैश और UPI</span></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="offer">
+<div><h3>आज का कॉम्बो: चाय + समोसा</h3><p>एक साथ लें, सीधे ऑर्डर में जुड़ जाएगा।</p></div>
+<button class="btn" id="combo">कॉम्बो जोड़ें</button>
+</div></div></section>
+
+<section id="menu" style="padding-top:0"><div class="wrap">
+<h2>हमारा मेन्यू</h2>
+<div class="tabwrap"><input class="search" id="q" type="search" placeholder="🔍 खोजें: समोसा, पनीर, मोमोज…" aria-label="मेन्यू खोजें"><div class="tabs" id="tabs" role="group" aria-label="श्रेणी"></div></div>
+<div id="items"></div>
+</div></section>
+
+<section id="gallery" class="gl"><div class="wrap">
+<h2>हमारे ख़ास व्यंजन</h2>
+<p class="sub">सबसे ज़्यादा पसंद किए जाने वाले, एक टैप में ऑर्डर में जोड़ें।</p>
+<div class="gal" id="gal"></div>
+</div></section>
+
+<section id="order"><div class="wrap">
+<h2>ऑर्डर करें</h2>
+<p class="sub">आपका ऑर्डर WhatsApp पर हमें पहुँच जाएगा।</p>
+<div class="box">
+<div class="sum" id="sum" style="border:0;margin-top:0;padding-top:0"><p class="empty">अभी कुछ नहीं चुना। मेन्यू से आइटम जोड़ें।</p></div>
+<label>लेने का तरीका</label>
+<div class="seg" id="mode">
+<label><input type="radio" name="mode" value="पिकअप" checked><span>पिकअप</span></label>
+<label><input type="radio" name="mode" value="डिलीवरी"><span>डिलीवरी</span></label></div>
+<div id="addrwrap" hidden><label for="addr">डिलीवरी का पता</label><input type="text" id="addr" placeholder="मोहल्ला, लैंडमार्क"></div>
+<label for="nm">आपका नाम</label><input type="text" id="nm" placeholder="नाम">
+<label>पेमेंट</label>
+<div class="seg" id="pay">
+<label><input type="radio" name="pay" value="कैश" checked><span>कैश</span></label>
+<label><input type="radio" name="pay" value="UPI"><span>UPI</span></label></div>
+<div class="upi" id="upibox" hidden>
+<div>UPI ID: <code id="upiid">231766729@axl</code></div>
+<button class="btn" id="copy" type="button">ID कॉपी करें</button>
+<a class="btn alt" id="upipay" href="#" style="margin:0">UPI ऐप में भुगतान</a>
+</div>
+<div style="margin-top:18px"><a class="btn wa" id="send" href="https://wa.me/919171464476" target="_blank" rel="noopener" style="text-align:center">WhatsApp पर ऑर्डर भेजें</a></div>
+</div></div></section>
+
+<section id="visit" style="background:var(--surface)"><div class="wrap">
+<h2>हमसे मिलें</h2>
+<p class="sub">&nbsp;</p>
+<div class="cols">
+<div><h3>पता</h3><p>मांडव रोड,<br>बगड़ी फाटा</p><p style="margin-top:10px"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Uttam+Restaurant+Mandav+Road+Bagdi+Fata">Google Maps में खोलें</a></p></div>
+<div><h3>समय</h3><p>सुबह 9:00 से<br>शाम 5:00 बजे तक</p></div>
+<div><h3>संपर्क</h3><p><a href="tel:+919171464476">91714 64476</a></p><p style="margin-top:10px"><a class="btn" href="https://wa.me/919171464476">WhatsApp करें</a></p></div>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="box rev">
+<div><h3 style="font-size:1.25rem">आपको हमारी चाय कैसी लगी?</h3><p class="sub" style="margin:4px 0 0">आपकी राय हमें और बेहतर बनाती है।</p></div>
+<div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Uttam+Restaurant+Mandav+Road+Bagdi+Fata">Google पर रिव्यू दें</a>
+<a class="btn alt" href="https://wa.me/919171464476?text=उत्तम%20रेस्टोरेंट%20के%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A4%BE%20%E0%A4%B8%E0%A5%81%E0%A4%9D%E0%A4%BE%E0%A4%B5%3A%20">सुझाव भेजें</a></div>
+</div></div></section>
+</main>
+
+<footer>© 2026 उत्तम रेस्टोरेंट, मांडव रोड बगड़ी फाटा · <a href="privacy.html">प्राइवेसी पॉलिसी</a></footer>
+<a class="fab" href="https://wa.me/919171464476" aria-label="WhatsApp">💬</a>
+<div class="toast" id="toast"></div>
+
+<a class="cartbar" id="cbar" href="#order" hidden><span id="cbn"></span><span id="cbt"></span></a>
+<script>
+// ===== यहाँ अपने असली भाव और आइटम बदलें =====
+var PHONE="919171464476", UPI="231766729@axl";
+var MENU=[
+ {id:"m1",cat:"चाट-चाय",n:"पोहा सादा",d:"",p:15,e:"☕"},
+ {id:"m2",cat:"चाट-चाय",n:"पोहा उसल",d:"",p:25,e:"☕"},
+ {id:"m3",cat:"चाट-चाय",n:"कचौरी सादी",d:"",p:15,e:"☕"},
+ {id:"m4",cat:"चाट-चाय",n:"कचौरी चटनी",d:"",p:30,e:"☕"},
+ {id:"m5",cat:"चाट-चाय",n:"समोसा सादा",d:"",p:15,e:"☕"},
+ {id:"m6",cat:"चाट-चाय",n:"समोसा चटनी",d:"",p:30,e:"☕"},
+ {id:"m7",cat:"चाट-चाय",n:"आलूबड़ा सादा",d:"",p:15,e:"☕"},
+ {id:"m8",cat:"चाट-चाय",n:"आलूबड़ा चटनी",d:"",p:30,e:"☕"},
+ {id:"m9",cat:"चाट-चाय",n:"भजिये बेसन",d:"",p:20,e:"☕"},
+ {id:"m10",cat:"चाट-चाय",n:"भजिये मूंग",d:"",p:30,e:"☕"},
+ {id:"m11",cat:"चाट-चाय",n:"जलेबी",d:"",p:20,e:"☕"},
+ {id:"m12",cat:"चाट-चाय",n:"चाय कट",d:"",p:10,e:"☕"},
+ {id:"m13",cat:"चाट-चाय",n:"चाय फुल",d:"",p:20,e:"☕"},
+ {id:"m14",cat:"चाट-चाय",n:"कॉफ़ी",d:"",p:15,e:"☕"},
+ {id:"m15",cat:"चाट-चाय",n:"दूध",d:"",p:20,e:"☕"},
+ {id:"m16",cat:"चाट-चाय",n:"छोले चाट",d:"",p:50,e:"☕"},
+ {id:"m17",cat:"चाट-चाय",n:"छोले टिकिया",d:"",p:50,e:"☕"},
+ {id:"m18",cat:"चाट-चाय",n:"दही पुरी",d:"",p:40,e:"☕"},
+ {id:"m19",cat:"चाट-चाय",n:"दही फुलकी",d:"",p:40,e:"☕"},
+ {id:"m20",cat:"चाट-चाय",n:"पानी पुरी",d:"",p:20,e:"☕"},
+ {id:"m21",cat:"चाट-चाय",n:"भेल पुरी",d:"",p:30,e:"☕"},
+ {id:"m22",cat:"थाली",n:"उत्तम स्पेशल थाली",d:"पनीर बटर मसाला, जीरा राइस, पापड़, दाल, बटर रोटी",p:230,e:"🍽️"},
+ {id:"m23",cat:"थाली",n:"रेगुलर थाली",d:"दाल, सब्जी, राइस, रोटी, सलाद",p:150,e:"🍽️"},
+ {id:"m24",cat:"चायनीज स्टार्टर",n:"चिली पनीर ड्राय",d:"",p:190,e:"🌶️"},
+ {id:"m25",cat:"चायनीज स्टार्टर",n:"चिली पनीर सेमी",d:"",p:170,e:"🌶️"},
+ {id:"m26",cat:"चायनीज स्टार्टर",n:"चिली पनीर ग्रेवी",d:"",p:150,e:"🌶️"},
+ {id:"m27",cat:"चायनीज स्टार्टर",n:"वेज मन्चुरियन ड्राय",d:"",p:100,e:"🌶️"},
+ {id:"m28",cat:"चायनीज स्टार्टर",n:"वेज मन्चुरियन सेमी",d:"",p:80,e:"🌶️"},
+ {id:"m29",cat:"चायनीज स्टार्टर",n:"वेज मन्चुरियन ग्रेवी",d:"",p:100,e:"🌶️"},
+ {id:"m30",cat:"चायनीज स्टार्टर",n:"वेज काप्ते",d:"",p:120,e:"🌶️"},
+ {id:"m31",cat:"चायनीज स्टार्टर",n:"ड्रेगन पनीर",d:"",p:180,e:"🌶️"},
+ {id:"m32",cat:"चायनीज स्टार्टर",n:"पनीर 65",d:"",p:180,e:"🌶️"},
+ {id:"m33",cat:"चायनीज स्टार्टर",n:"चना चिल्ली",d:"",p:160,e:"🌶️"},
+ {id:"m34",cat:"चायनीज स्टार्टर",n:"चना रोस्ट",d:"",p:160,e:"🌶️"},
+ {id:"m35",cat:"नुडल्स",n:"वेज चिली गार्लिक नुडल्स",d:"",p:140,e:"🍜"},
+ {id:"m36",cat:"नुडल्स",n:"वेज सेजओन नुडल्स",d:"",p:150,e:"🍜"},
+ {id:"m37",cat:"नुडल्स",n:"मन्चुरियन नुडल्स",d:"",p:140,e:"🍜"},
+ {id:"m38",cat:"नुडल्स",n:"वेज सिंगापुरी",d:"",p:150,e:"🍜"},
+ {id:"m39",cat:"नुडल्स",n:"क्रिस्पी नुडल्स",d:"",p:150,e:"🍜"},
+ {id:"m40",cat:"नुडल्स",n:"क्रिस्पी कोड",d:"",p:160,e:"🍜"},
+ {id:"m41",cat:"मैगी",n:"मैगी",d:"",p:50,e:"🍜"},
+ {id:"m42",cat:"कोन्ट्री",n:"वेज सेन्डवीच",d:"",p:50,e:"🥪"},
+ {id:"m43",cat:"कोन्ट्री",n:"वेज ग्रीन सेन्डवीच",d:"",p:70,e:"🥪"},
+ {id:"m44",cat:"कोन्ट्री",n:"कोल्ड कॉफी",d:"",p:60,e:"🥪"},
+ {id:"m45",cat:"कोन्ट्री",n:"फ्रेन्च फ्राईज",d:"",p:90,e:"🥪"},
+ {id:"m46",cat:"चायनीज सूप",n:"वेज मन्चाव शुप",d:"",p:85,e:"🍲"},
+ {id:"m47",cat:"चायनीज सूप",n:"वेज हाट शार्स शुप",d:"",p:120,e:"🍲"},
+ {id:"m48",cat:"चायनीज सूप",n:"स्वीट कॉर्न शुप",d:"",p:70,e:"🍲"},
+ {id:"m49",cat:"चायनीज सूप",n:"लेमन कोरेन्टर शुप",d:"",p:110,e:"🍲"},
+ {id:"m50",cat:"चायनीज सूप",n:"टोमेटो शुप",d:"",p:70,e:"🍲"},
+ {id:"m51",cat:"मोमोज",n:"वेज मोमोज",d:"",p:60,e:"🥟"},
+ {id:"m52",cat:"मोमोज",n:"तन्दुरी मोमोज",d:"",p:180,e:"🥟"},
+ {id:"m53",cat:"मोमोज",n:"अफगानी मोमोज",d:"",p:190,e:"🥟"},
+ {id:"m54",cat:"मोमोज",n:"कुरकुरे मोमोज",d:"",p:180,e:"🥟"},
+ {id:"m55",cat:"मोमोज",n:"फ्राई मोमोज",d:"",p:100,e:"🥟"},
+ {id:"m56",cat:"मोमोज",n:"पनीर मोमोज",d:"",p:150,e:"🥟"},
+ {id:"m57",cat:"मोमोज",n:"पनीर तन्दुरी मोमोज",d:"",p:180,e:"🥟"},
+ {id:"m58",cat:"मोमोज",n:"चिली मोमोज",d:"",p:180,e:"🥟"},
+ {id:"m59",cat:"दाल",n:"दाल फ्राय",d:"",p:110,e:"🥣"},
+ {id:"m60",cat:"दाल",n:"दाल तड़का",d:"",p:120,e:"🥣"},
+ {id:"m61",cat:"दाल",n:"दाल मखानी",d:"",p:180,e:"🥣"},
+ {id:"m62",cat:"दाल",n:"बटर दाल",d:"",p:120,e:"🥣"},
+ {id:"m63",cat:"दाल",n:"हरि मिर्ची दाल",d:"",p:100,e:"🥣"},
+ {id:"m64",cat:"दाल",n:"पंजाबी दाल",d:"",p:130,e:"🥣"},
+ {id:"m65",cat:"राइस",n:"वेज फ्राय राइस",d:"",p:110,e:"🍚"},
+ {id:"m66",cat:"राइस",n:"वेज चीली गार्लिक राईस",d:"",p:150,e:"🍚"},
+ {id:"m67",cat:"राइस",n:"वेज सेजओन राईस",d:"",p:130,e:"🍚"},
+ {id:"m68",cat:"राइस",n:"वेज मन्चुरिन राइस",d:"",p:130,e:"🍚"},
+ {id:"m69",cat:"राइस",n:"पनीर फ्राई राईस",d:"",p:150,e:"🍚"},
+ {id:"m70",cat:"राइस",n:"वेज चिली राईस",d:"",p:150,e:"🍚"},
+ {id:"m71",cat:"बिरयानी",n:"हैदराबादी बिरयानी",d:"",p:170,e:"🍛"},
+ {id:"m72",cat:"बिरयानी",n:"वेज बिरयानी",d:"",p:140,e:"🍛"},
+ {id:"m73",cat:"बिरयानी",n:"हैदराबादी दम बिरयानी",d:"",p:180,e:"🍛"},
+ {id:"m74",cat:"बिरयानी",n:"छोले भटूरे",d:"",p:90,e:"🍛"},
+ {id:"m75",cat:"बिरयानी",n:"चना मसाला",d:"",p:120,e:"🍛"},
+ {id:"m76",cat:"पुलाव",n:"कश्मिरी पुलाव",d:"",p:150,e:"🍚"},
+ {id:"m77",cat:"पुलाव",n:"स्टीम राईस, बटर खिचड़ी",d:"",p:80,e:"🍚"},
+ {id:"m78",cat:"पुलाव",n:"जीरा राइस",d:"",p:100,e:"🍚"},
+ {id:"m79",cat:"पुलाव",n:"वेज पुलाव",d:"",p:130,e:"🍚"},
+ {id:"m80",cat:"पुलाव",n:"मसाला राईस",d:"",p:140,e:"🍚"},
+ {id:"m81",cat:"रोटी-नान",n:"तंदुरी रोटी प्लेन / तवा रोटी",d:"",p:15,e:"🫓"},
+ {id:"m82",cat:"रोटी-नान",n:"तन्दुरी रोटी बटर",d:"",p:17,e:"🫓"},
+ {id:"m83",cat:"रोटी-नान",n:"मिसी रोटी",d:"",p:25,e:"🫓"},
+ {id:"m84",cat:"रोटी-नान",n:"मक्का रोटी",d:"",p:30,e:"🫓"},
+ {id:"m85",cat:"रोटी-नान",n:"ज्वार बाजरा रोटी",d:"",p:30,e:"🫓"},
+ {id:"m86",cat:"रोटी-नान",n:"बटर नान",d:"",p:28,e:"🫓"},
+ {id:"m87",cat:"रोटी-नान",n:"प्लेन नान",d:"",p:25,e:"🫓"},
+ {id:"m88",cat:"रोटी-नान",n:"गार्लिक नान",d:"",p:40,e:"🫓"},
+ {id:"m89",cat:"पराठा",n:"लच्छा पराठा",d:"",p:40,e:"🫓"},
+ {id:"m90",cat:"पराठा",n:"पनीर पराठा",d:"",p:60,e:"🫓"},
+ {id:"m91",cat:"पराठा",n:"गोभी पराठा",d:"",p:40,e:"🫓"},
+ {id:"m92",cat:"पराठा",n:"मिक्स पराठा",d:"",p:50,e:"🫓"},
+ {id:"m93",cat:"पराठा",n:"आलू पराठा",d:"",p:40,e:"🫓"},
+ {id:"m94",cat:"पापड़-सलाद",n:"फ्राय पापड़",d:"",p:25,e:"🥗"},
+ {id:"m95",cat:"पापड़-सलाद",n:"ड्राय पापड़",d:"",p:20,e:"🥗"},
+ {id:"m96",cat:"पापड़-सलाद",n:"मसाला पापड़",d:"",p:30,e:"🥗"},
+ {id:"m97",cat:"पापड़-सलाद",n:"ग्रीन सलाद",d:"",p:30,e:"🥗"},
+ {id:"m98",cat:"पापड़-सलाद",n:"कचुम्बर सलाद",d:"",p:50,e:"🥗"},
+ {id:"m99",cat:"पापड़-सलाद",n:"मिक्स सलाद",d:"",p:40,e:"🥗"},
+ {id:"m100",cat:"तंदूरी स्टार्टर",n:"पनीर टिक्का",d:"",p:200,e:"🍢"},
+ {id:"m101",cat:"तंदूरी स्टार्टर",n:"स्टफ्ड मशरूम टिक्का",d:"",p:180,e:"🍢"},
+ {id:"m102",cat:"तंदूरी स्टार्टर",n:"बैसिक कबाब",d:"",p:180,e:"🍢"},
+ {id:"m103",cat:"तंदूरी स्टार्टर",n:"हरा भरा कबाब",d:"",p:100,e:"🍢"},
+ {id:"m104",cat:"तंदूरी स्टार्टर",n:"मलाई चाप",d:"",p:130,e:"🍢"},
+ {id:"m105",cat:"तंदूरी स्टार्टर",n:"मसाला चाप",d:"",p:150,e:"🍢"},
+ {id:"m106",cat:"तंदूरी स्टार्टर",n:"पोदीना चाप",d:"",p:130,e:"🍢"},
+ {id:"m107",cat:"तंदूरी स्टार्टर",n:"अचारी चाप",d:"",p:150,e:"🍢"},
+ {id:"m108",cat:"इण्डियन सब्जी",n:"सेव टमाटर",d:"",p:100,e:"🍛"},
+ {id:"m109",cat:"इण्डियन सब्जी",n:"दुध सेव",d:"",p:120,e:"🍛"},
+ {id:"m110",cat:"इण्डियन सब्जी",n:"मिक्स वेज",d:"",p:180,e:"🍛"},
+ {id:"m111",cat:"इण्डियन सब्जी",n:"वेज कोल्हापुरी",d:"",p:170,e:"🍛"},
+ {id:"m112",cat:"इण्डियन सब्जी",n:"भिंडी मसाला",d:"",p:120,e:"🍛"},
+ {id:"m113",cat:"इण्डियन सब्जी",n:"शाही पनीर रेड/व्हाईट",d:"",p:180,e:"🍛"},
+ {id:"m114",cat:"इण्डियन सब्जी",n:"पनीर लबाबदार",d:"",p:200,e:"🍛"},
+ {id:"m115",cat:"इण्डियन सब्जी",n:"पनीर भूर्जी / मटर पनीर",d:"",p:150,e:"🍛"},
+ {id:"m116",cat:"इण्डियन सब्जी",n:"पालक पनीर",d:"",p:180,e:"🍛"},
+ {id:"m117",cat:"इण्डियन सब्जी",n:"पनीर टिक्का मसाला",d:"",p:180,e:"🍛"},
+ {id:"m118",cat:"इण्डियन सब्जी",n:"बटर पनीर मसाला",d:"",p:190,e:"🍛"},
+ {id:"m119",cat:"इण्डियन सब्जी",n:"पनीर मसाला",d:"",p:200,e:"🍛"},
+ {id:"m120",cat:"इण्डियन सब्जी",n:"कढ़ाई पनीर",d:"",p:170,e:"🍛"},
+ {id:"m121",cat:"इण्डियन सब्जी",n:"कश्मीरी दम आलू",d:"",p:180,e:"🍛"},
+ {id:"m122",cat:"इण्डियन सब्जी",n:"पनीर अंगारा",d:"",p:190,e:"🍛"},
+ {id:"m123",cat:"इण्डियन सब्जी",n:"काजु कड़ी",d:"",p:200,e:"🍛"},
+ {id:"m124",cat:"इण्डियन सब्जी",n:"काजु मसाला",d:"",p:220,e:"🍛"},
+ {id:"m125",cat:"इण्डियन सब्जी",n:"काजु पनीर",d:"",p:200,e:"🍛"}
+];
+var COMBO_PRICE=18; // चाय + समोसा का कॉम्बो भाव
+// खास व्यंजन: (मेन्यू का नाम, इमोजी, टैग, छोटा विवरण, फोटो का रास्ता - जैसे "images/chai.jpg", खाली छोड़ें तो इमोजी दिखेगा)
+var GALLERY=[
+ ["चाय फुल","☕","सुबह की शान","अदरक-इलायची वाली गरमा-गरम चाय",""],
+ ["समोसा चटनी","🥟","बेस्ट सेलर","कुरकुरा समोसा, तीखी चटनी के साथ",""],
+ ["उत्तम स्पेशल थाली","🍽️","स्पेशल","पनीर बटर मसाला, जीरा राइस, दाल, पापड़, बटर रोटी",""],
+ ["पनीर टिक्का","🍢","तंदूरी","अंगारों पर सिका नरम पनीर",""],
+ ["हैदराबादी दम बिरयानी","🍛","दम पर पकी","खुशबूदार, धीमी आँच पर बनी",""],
+ ["तन्दुरी मोमोज","🥟","पसंदीदा","स्मोकी तंदूरी स्वाद वाले मोमोज",""],
+ ["छोले भटूरे","🫓","फुल प्लेट","गरम भटूरे और मसालेदार छोले",""],
+ ["जलेबी","🍥","मीठा","ताज़ा, कुरकुरी और रसभरी",""]
+];
+// ============================================
+var cart={}, q="", cat=null, $=function(i){return document.getElementById(i)};
+var cats=MENU.map(function(m){return m.cat}).filter(function(c,i,a){return a.indexOf(c)===i});cat=cats[0];
+function rs(n){return "₹"+n}
+function toast(t){var e=$("toast");e.textContent=t;e.className="toast on";setTimeout(function(){e.className="toast"},1800)}
+function drawTabs(){$("tabs").innerHTML=cats.map(function(c){return '<button class="tab" aria-pressed="'+(!q&&c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("")}
+function drawItems(){
+ var s=q.trim().toLowerCase();
+ var L=MENU.filter(function(m){return s?(m.n+" "+m.d).toLowerCase().indexOf(s)>-1:m.cat===cat});
+ $("items").innerHTML=L.length?L.map(function(m){var c=cart[m.id]||0;
+  return '<div class="item"><div class="em" aria-hidden="true">'+m.e+'</div><div class="n">'+m.n+(m.d?'<small>'+m.d+'</small>':'')+'</div><div class="price">'+rs(m.p)+'</div><div class="qty">'+(c?'<button data-id="'+m.id+'" data-d="-1" aria-label="कम करें">−</button><output>'+c+'</output><button data-id="'+m.id+'" data-d="1" aria-label="जोड़ें">+</button>':'<button class="add" data-id="'+m.id+'" data-d="1">जोड़ें</button>')+'</div></div>'}).join(""):'<p class="noitem">कुछ नहीं मिला 🙏</p>'}
+function lines(){
+ var L=[],t=0;
+ MENU.forEach(function(m){var q=cart[m.id]||0;if(q){L.push({t:m.n+" × "+q,a:m.p*q});t+=m.p*q}});
+ var c=cart.combo||0;if(c){L.push({t:"कॉम्बो (चाय + समोसा) × "+c,a:COMBO_PRICE*c});t+=COMBO_PRICE*c}
+ return {L:L,t:t}}
+function drawSum(){
+ var r=lines(),n=0;for(var k in cart)n+=cart[k];$("cnt").textContent=n;
+ $("sum").innerHTML=r.L.length?r.L.map(function(l){return '<div><span>'+l.t+'</span><span>'+rs(l.a)+'</span></div>'}).join("")+'<div class="tot"><span>कुल</span><span>'+rs(r.t)+'</span></div>':'<p class="empty">अभी कुछ नहीं चुना। मेन्यू से आइटम जोड़ें।</p>';
+ var u=$("upipay");u.href="upi://pay?pa="+UPI+"&pn="+encodeURIComponent("Uttam Restaurant")+(r.t?"&am="+r.t:"")+"&cu=INR";
+ var b=$("cbar");b.hidden=!n;$("cbn").textContent="🛒 "+n+" आइटम";$("cbt").textContent=rs(r.t)+"  ऑर्डर करें →";
+ drawItems()}
+function val(n){return document.querySelector('input[name="'+n+'"]:checked').value}
+document.addEventListener("click",function(e){
+ var t=e.target;
+ if(t.dataset.c){cat=t.dataset.c;q="";$("q").value="";drawTabs();drawItems()}
+ if(t.dataset.g){cart[t.dataset.g]=(cart[t.dataset.g]||0)+1;drawSum();toast("ऑर्डर में जुड़ गया")}
+ if(t.dataset.id){var id=t.dataset.id,q=(cart[id]||0)+ +t.dataset.d;if(q<=0)delete cart[id];else cart[id]=q;drawSum()}
+});
+$("combo").onclick=function(){cart.combo=(cart.combo||0)+1;drawSum();toast("कॉम्बो जुड़ गया");};
+document.querySelectorAll('input[name="mode"]').forEach(function(i){i.onchange=function(){$("addrwrap").hidden=val("mode")!=="डिलीवरी"}});
+document.querySelectorAll('input[name="pay"]').forEach(function(i){i.onchange=function(){$("upibox").hidden=val("pay")!=="UPI"}});
+$("copy").onclick=function(){try{navigator.clipboard.writeText(UPI).then(function(){toast("UPI ID कॉपी हो गई")},function(){toast("ID: "+UPI)})}catch(x){toast("ID: "+UPI)}};
+function buildLink(ev){
+ var r=lines();if(!r.L.length){ev.preventDefault();toast("पहले मेन्यू से आइटम चुनें");return}
+ var mode=val("mode"),a=$("addr").value.trim();
+ if(mode==="डिलीवरी"&&!a){ev.preventDefault();toast("डिलीवरी का पता लिखें");$("addr").focus();return}
+ var m="नमस्ते, मुझे ऑर्डर देना है:\n"+r.L.map(function(l){return "• "+l.t+" = "+rs(l.a)}).join("\n")+"\nकुल: "+rs(r.t)+"\nतरीका: "+mode+(mode==="डिलीवरी"?"\nपता: "+a:"")+"\nपेमेंट: "+val("pay");
+ var n=$("nm").value.trim();if(n)m+="\nनाम: "+n;
+ $("send").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(m)}
+$("send").addEventListener("click",buildLink);
+$("gal").innerHTML=GALLERY.map(function(g){var m=MENU.filter(function(x){return x.n===g[0]})[0];if(!m)return"";
+ return '<div class="gcard"><div class="gin"><div class="gimg"><span aria-hidden="true">'+g[1]+'</span>'+(g[4]?'<img src="'+g[4]+'" alt="'+g[0]+'" loading="lazy">':'')+'<i class="gtag">'+g[2]+'</i></div><div class="gbody"><h3>'+g[0]+'</h3><small>'+g[3]+'</small><div class="gfoot"><b>'+rs(m.p)+'</b><button data-g="'+m.id+'">जोड़ें +</button></div></div></div></div>'}).join("");
+(function(){var d=new Date(),h=d.getHours()+d.getMinutes()/60,o=h>=9&&h<17;$("openstate").textContent=o?"🟢 अभी खुला है":"🔴 अभी बंद है, सुबह 9 बजे खुलेंगे"})();
+$("q").oninput=function(){q=this.value;drawTabs();drawItems()};
+drawTabs();drawSum();
+</script>
+<script>
+try{if("serviceWorker" in navigator&&location.protocol==="https:"){navigator.serviceWorker.register("sw.js")}}catch(e){}
+</script>
+</body>
+</html>
