@@ -1,0 +1,750 @@
+{
+  "restaurant": "Uttam Sweets",
+  "address": "Mandav Road, Bagdi Fata, Dhar (M.P.)",
+  "phone": [
+    "97537-11114",
+    "97531-51544"
+  ],
+  "menu": [
+    {
+      "category": "Chinese Starter",
+      "items": [
+        {
+          "name": "Chili Panir Dry",
+          "price": 190,
+          "veg": true
+        },
+        {
+          "name": "Chili Panir Semi",
+          "price": 170,
+          "veg": true
+        },
+        {
+          "name": "Chili Panir Gravy",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Veg Manchurian Dry",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Veg Manchurian Semi",
+          "price": 80,
+          "veg": true
+        },
+        {
+          "name": "Veg Manchurian Gravy",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Veg Kopte",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Dragon Panir",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Panir 65",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Chana Chilli",
+          "price": 160,
+          "veg": true
+        },
+        {
+          "name": "Chana Roast",
+          "price": 160,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Noodles",
+      "items": [
+        {
+          "name": "Veg Hakka Noodles",
+          "price": null,
+          "veg": true
+        },
+        {
+          "name": "Veg Chili Garlic Noodles",
+          "price": 140,
+          "veg": true
+        },
+        {
+          "name": "Veg Sejwan Noodles",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Manchurian Noodles",
+          "price": 140,
+          "veg": true
+        },
+        {
+          "name": "Veg Singapuri",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Crispy Noodles",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Crispy Kod",
+          "price": 160,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Maggi",
+      "items": [
+        {
+          "name": "Maggi",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Butter Maggi",
+          "price": null,
+          "veg": true
+        },
+        {
+          "name": "Masala Maggi",
+          "price": null,
+          "veg": true
+        },
+        {
+          "name": "Cheese Maggi",
+          "price": null,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Country",
+      "items": [
+        {
+          "name": "Veg Sandwich",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Veg Green Sandwich",
+          "price": 70,
+          "veg": true
+        },
+        {
+          "name": "Cold Coffee",
+          "price": 60,
+          "veg": true
+        },
+        {
+          "name": "French Fries",
+          "price": 90,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Chinese Soup",
+      "items": [
+        {
+          "name": "Veg Manchow Soup",
+          "price": 85,
+          "veg": true
+        },
+        {
+          "name": "Veg Hot Sour Soup",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Sweet Corn Soup",
+          "price": 70,
+          "veg": true
+        },
+        {
+          "name": "Lemon Coriander Soup",
+          "price": 110,
+          "veg": true
+        },
+        {
+          "name": "Tomato Soup",
+          "price": 70,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Momos",
+      "items": [
+        {
+          "name": "Veg Momos",
+          "price": 60,
+          "veg": true
+        },
+        {
+          "name": "Tandoori Momos",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Afgani Momos",
+          "price": 190,
+          "veg": true
+        },
+        {
+          "name": "Kurkure Momos",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Fry Momos",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Panir Momos",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Panir Tandoori Momos",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Chili Momos",
+          "price": 180,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Dal",
+      "items": [
+        {
+          "name": "Dal Fry",
+          "price": 110,
+          "veg": true
+        },
+        {
+          "name": "Dal Tadka",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Dal Makhani",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Butter Dal",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Hari Mirch Dal",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Punjabi Dal",
+          "price": 130,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Rice",
+      "items": [
+        {
+          "name": "Veg Fry Rice",
+          "price": 110,
+          "veg": true
+        },
+        {
+          "name": "Veg Chili Garlic Rice",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Veg Sezwan Rice",
+          "price": 130,
+          "veg": true
+        },
+        {
+          "name": "Veg Manchurian Rice",
+          "price": 130,
+          "veg": true
+        },
+        {
+          "name": "Panir Fry Rice",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Veg Chili Rice",
+          "price": 150,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Biryani",
+      "items": [
+        {
+          "name": "Hyderabadi Biryani",
+          "price": 170,
+          "veg": true
+        },
+        {
+          "name": "Veg Biryani",
+          "price": 140,
+          "veg": true
+        },
+        {
+          "name": "Hyderabadi Dum Biryani",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Chole Bhature",
+          "price": 90,
+          "veg": true
+        },
+        {
+          "name": "Chana Masala",
+          "price": 120,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Pulav",
+      "items": [
+        {
+          "name": "Kashmiri Pulav",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Steam Rice, Butter Khichdi",
+          "price": 80,
+          "veg": true
+        },
+        {
+          "name": "Jeera Rice",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Veg Pulav",
+          "price": 130,
+          "veg": true
+        },
+        {
+          "name": "Masala Rice",
+          "price": 140,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Tandoori Roti",
+      "items": [
+        {
+          "name": "Tandoori Roti / Plain Tawa Roti",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Tandoori Roti Butter",
+          "price": 17,
+          "veg": true
+        },
+        {
+          "name": "Missi Roti",
+          "price": 25,
+          "veg": true
+        },
+        {
+          "name": "Makka Roti",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Jowar Bajra Roti",
+          "price": 30,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Paratha",
+      "items": [
+        {
+          "name": "Lachha Paratha",
+          "price": 40,
+          "veg": true
+        },
+        {
+          "name": "Panir Paratha",
+          "price": 60,
+          "veg": true
+        },
+        {
+          "name": "Gobhi Paratha",
+          "price": 40,
+          "veg": true
+        },
+        {
+          "name": "Mix Paratha",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Aloo Paratha",
+          "price": 40,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Papad",
+      "items": [
+        {
+          "name": "Fry Papad",
+          "price": 25,
+          "veg": true
+        },
+        {
+          "name": "Dry Papad",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Masala Papad",
+          "price": 30,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Salad",
+      "items": [
+        {
+          "name": "Green Salad",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Kachumber Salad",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Mix Salad",
+          "price": 40,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Tandoori Starter",
+      "items": [
+        {
+          "name": "Panir Tikka",
+          "price": 200,
+          "veg": true
+        },
+        {
+          "name": "Stuffed Mushroom Tikka",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Basic Kabab",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Hara Bhara Kabab",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Malai Chap",
+          "price": 130,
+          "veg": true
+        },
+        {
+          "name": "Masala Chap",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Podina Chap",
+          "price": 130,
+          "veg": true
+        },
+        {
+          "name": "Achari Chap",
+          "price": 150,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Indian",
+      "items": [
+        {
+          "name": "Sev Tamatar",
+          "price": 100,
+          "veg": true
+        },
+        {
+          "name": "Dudh Sev",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Mix Veg",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Veg Kolhapuri",
+          "price": 170,
+          "veg": true
+        },
+        {
+          "name": "Bhindi Masala",
+          "price": 120,
+          "veg": true
+        },
+        {
+          "name": "Shahi Panir Red/White",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Panir Lababdar",
+          "price": 200,
+          "veg": true
+        },
+        {
+          "name": "Panir Bhurji / Mutter Panir",
+          "price": 150,
+          "veg": true
+        },
+        {
+          "name": "Palak Panir",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Panir Tikka Masala",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Butter Panir Masala",
+          "price": 190,
+          "veg": true
+        },
+        {
+          "name": "Panir Masala",
+          "price": 200,
+          "veg": true
+        },
+        {
+          "name": "Kadai Panir",
+          "price": 170,
+          "veg": true
+        },
+        {
+          "name": "Kashmiri Dum Aloo",
+          "price": 180,
+          "veg": true
+        },
+        {
+          "name": "Panir Angara",
+          "price": 190,
+          "veg": true
+        },
+        {
+          "name": "Kaju Kari",
+          "price": 200,
+          "veg": true
+        },
+        {
+          "name": "Kaju Masala",
+          "price": 220,
+          "veg": true
+        },
+        {
+          "name": "Kaju Panir",
+          "price": 200,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Naan",
+      "items": [
+        {
+          "name": "Butter Naan",
+          "price": 28,
+          "veg": true
+        },
+        {
+          "name": "Plain Naan",
+          "price": 25,
+          "veg": true
+        },
+        {
+          "name": "Garlic Naan",
+          "price": 40,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Chat Chaupati",
+      "items": [
+        {
+          "name": "Poha Sada",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Poha Usal",
+          "price": 25,
+          "veg": true
+        },
+        {
+          "name": "Kachori Sada",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Kachori Chatni",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Samosa Sada",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Samosa Chatni",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Alubada Sada",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Alubada Chatni",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Bhajiye Besan",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Bhajiye Mung",
+          "price": 30,
+          "veg": true
+        },
+        {
+          "name": "Jalebi",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Chai Cut",
+          "price": 10,
+          "veg": true
+        },
+        {
+          "name": "Chai Full",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Coffee",
+          "price": 15,
+          "veg": true
+        },
+        {
+          "name": "Dudh",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Chole Chat",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Chole Tikiya",
+          "price": 50,
+          "veg": true
+        },
+        {
+          "name": "Dahi Puri",
+          "price": 40,
+          "veg": true
+        },
+        {
+          "name": "Dahi Fulki",
+          "price": 40,
+          "veg": true
+        },
+        {
+          "name": "Pani Puri",
+          "price": 20,
+          "veg": true
+        },
+        {
+          "name": "Bhel Puri",
+          "price": 30,
+          "veg": true
+        }
+      ]
+    },
+    {
+      "category": "Thali",
+      "items": [
+        {
+          "name": "Uttam Special (Panir Butter Masala, Jeera Rice, Papad, Dal, Butter Roti)",
+          "price": 230,
+          "veg": true
+        },
+        {
+          "name": "Regular Thali (Dal, Sabzi, Rice, Roti, Salad)",
+          "price": 150,
+          "veg": true
+        }
+      ]
+    }
+  ]
+}
