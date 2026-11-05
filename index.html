@@ -374,6 +374,7 @@ function buildLink(ev){
  if(mode==="डिलीवरी"&&!a){ev.preventDefault();toast("डिलीवरी का पता लिखें");$("addr").focus();return}
  var m="नमस्ते, मुझे ऑर्डर देना है:\n"+r.L.map(function(l){return "• "+l.t+" = "+rs(l.a)}).join("\n")+"\nकुल: "+rs(r.t)+"\nतरीका: "+mode+(mode==="डिलीवरी"?"\nपता: "+a:"")+"\nपेमेंट: "+val("pay");
  var n=$("nm").value.trim();if(n)m+="\nनाम: "+n;
+  try{fetch("https://script.google.com/macros/s/AKfycbzPgnPLYMtBab-nKCFL_ZtWsvSmSgwTRfRovY8lxZo4McSnGtDXmP9oPYudBZvWMG-oIg/exec",{method:"POST",mode:"no-cors",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({name:n,mode:mode,payment:val("pay"),address:a,items:r.L.map(function(x){return x.t}).join(", "),total:r.t})})}catch(e){}
  $("send").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent(m)}
 $("send").addEventListener("click",buildLink);
 $("gal").innerHTML=GALLERY.map(function(g){var m=MENU.filter(function(x){return x.n===g[0]})[0];if(!m)return"";
